@@ -1,0 +1,490 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-order;verify-if-a-user-is-able-to-create-an-order",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify if a user is able to create an order",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1875879500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to main page",
+            "match": {
+              "location": "features\\createOrder.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3462836400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 5,
+            "name": "User adds T-shirt to cart",
+            "match": {
+              "location": "features\\createOrder.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319676199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 6,
+            "name": "User changes T-shirt parameters",
+            "match": {
+              "location": "features\\createOrder.step.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1459281800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 7,
+            "name": "User fills a billing form",
+            "match": {
+              "location": "features\\createOrder.step.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1141277100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User submits the billing form",
+            "match": {
+              "location": "features\\createOrder.step.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49864400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Card details form is opened",
+            "match": {
+              "location": "features\\createOrder.step.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2035244299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User fills card details",
+            "match": {
+              "location": "features\\createOrder.step.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1139704599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Order is created",
+            "match": {
+              "location": "features\\createOrder.step.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2923984100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2193387399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-order",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create Order",
+    "tags": [],
+    "uri": "features\\createOrder.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "what-is-the-page-title?;the-page-contains-a-specific-title",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "The page contains a specific title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 750681199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "url is \"https://ilarionhalushka.github.io/jekyll-ecommerce-demo/\"",
+            "match": {
+              "location": "features\\titles.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563870500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the page",
+            "match": {
+              "location": "features\\titles.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3017100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should have a \"Find your spirit animal\" title",
+            "match": {
+              "location": "features\\titles.step.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7156699,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Find \u001b[7my\u001b[27mour \u001b[7ms\u001b[27mpirit \u001b[7ma\u001b[27mnimal\"\u001b[39m\nReceived: \u001b[31m\"Find \u001b[7mY\u001b[27mour \u001b[7mS\u001b[27mpirit \u001b[7mA\u001b[27mnimal\u001b[7m | Fur\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (D:\\playwright\\projects\\Cucumber\\node_modules\\playwright\\lib\\matchers\\expect.js:198:37)\n    at ExampleWorld.<anonymous> (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:15:17)\n    at fulfilled (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 637612199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "what-is-the-page-title?;the-page-contains-a-specific-title",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "The page contains a specific title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 811239300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "url is \"https://ilarionhalushka.github.io/jekyll-ecommerce-demo/about/\"",
+            "match": {
+              "location": "features\\titles.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1071945899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the page",
+            "match": {
+              "location": "features\\titles.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1077499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should have a \"Our Story\" title",
+            "match": {
+              "location": "features\\titles.step.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4460900,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Our Story\"\u001b[39m\nReceived: \u001b[31m\"Our Story\u001b[7m | Fur\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (D:\\playwright\\projects\\Cucumber\\node_modules\\playwright\\lib\\matchers\\expect.js:198:37)\n    at ExampleWorld.<anonymous> (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:15:17)\n    at fulfilled (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 667584299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "what-is-the-page-title?;the-page-contains-a-specific-title",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "The page contains a specific title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 828054800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "url is \"https://ilarionhalushka.github.io/jekyll-ecommerce-demo/contact/\"",
+            "match": {
+              "location": "features\\titles.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1059193200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the page",
+            "match": {
+              "location": "features\\titles.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1154800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should have a \"Get in touch\" title",
+            "match": {
+              "location": "features\\titles.step.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5375800,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Get in touch\"\u001b[39m\nReceived: \u001b[31m\"Contact | Fur\"\u001b[39m\n    at Proxy.<anonymous> (D:\\playwright\\projects\\Cucumber\\node_modules\\playwright\\lib\\matchers\\expect.js:198:37)\n    at ExampleWorld.<anonymous> (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:15:17)\n    at fulfilled (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 666957099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "what-is-the-page-title?;the-page-contains-a-specific-title",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "The page contains a specific title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 829585200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "url is \"https://ilarionhalushka.github.io/jekyll-ecommerce-demo/shipping/\"",
+            "match": {
+              "location": "features\\titles.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 634974400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the page",
+            "match": {
+              "location": "features\\titles.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1254899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should have a \"Delivery Details\" title",
+            "match": {
+              "location": "features\\titles.step.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4901300,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Delivery \u001b[7mDetails\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mShipping / \u001b[27mDelivery \u001b[7m| Fur\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (D:\\playwright\\projects\\Cucumber\\node_modules\\playwright\\lib\\matchers\\expect.js:198:37)\n    at ExampleWorld.<anonymous> (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:15:17)\n    at fulfilled (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 666041799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "what-is-the-page-title?;the-page-contains-a-specific-title",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "The page contains a specific title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 313527600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "url is \"https://ilarionhalushka.github.io/jekyll-ecommerce-demo/returns/\"",
+            "match": {
+              "location": "features\\titles.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 658343500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the page",
+            "match": {
+              "location": "features\\titles.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1245800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should have a \"Return policy\" title",
+            "match": {
+              "location": "features\\titles.step.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 15647499,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Return\u001b[7m policy\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Return\u001b[7ms | Fur\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (D:\\playwright\\projects\\Cucumber\\node_modules\\playwright\\lib\\matchers\\expect.js:198:37)\n    at ExampleWorld.<anonymous> (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:15:17)\n    at fulfilled (D:\\playwright\\projects\\Cucumber\\features\\titles.step.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 671338400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "what-is-the-page-title?",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "What is the page title?",
+    "tags": [],
+    "uri": "features\\titles.feature"
+  }
+]
